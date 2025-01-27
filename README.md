@@ -33,7 +33,7 @@ We calculate the city with the highest total spend using the following code:
 ```python
 max_spend_city = final_tab.groupby('City').Spend_Amount.sum().sort_values(ascending=False).head(1)
 
-### 2. Age Group with Maximum Spend
+### 2. **Age Group with Maximum Spend**
 
 Customers are grouped into the following age bins:
 
@@ -45,14 +45,14 @@ Customers are grouped into the following age bins:
 
 The analysis shows that the **43-55** age group spends the most, with a total spend of ₹80,737,505.37.
 
-### 3. Top 10 Customers in Terms of Repayment
+### 3. **Top 10 Customers in Terms of Repayment**
 
 Top customers who repaid the most are:
 
 ```python
 top_10_repayment_customers = final_tab.groupby('Customer').Repayment_Amount.sum().sort_values(ascending=False).head(10)
 
-### Visualizations
+### **Visualizations**
 
 Visualizations can be generated using libraries like `matplotlib` and `seaborn` to create insightful graphics. Below is an example of how to plot the yearly spend on **FOOD** products across different cities:
 
